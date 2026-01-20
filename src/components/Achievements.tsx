@@ -2,9 +2,8 @@ import Image from "next/image";
 
 const achievements = [
   {
-    title: "3rd Winner elevAIte Microsoft x Biji-biji Initiative Hackathon 2025",
+    title: "3rd Winner elevAIte Microsoft x Biji-biji Hackathon 2025 at Tel-U Hub",
     date: "June 2025",
-    location: "Tel-U Hub",
     highlight: "3rd Winner",
     competitionImage: "/images/elevaite.png",
     organizers: [
@@ -16,7 +15,6 @@ const achievements = [
   {
     title: "Top 6 Finalist Digination Fest PPI Hackathon 2025",
     date: "June 2025",
-    location: "Digination Fest",
     highlight: "Top 6 Finalist",
     competitionImage: "/images/digination.png",
     organizers: [
@@ -29,7 +27,6 @@ const achievements = [
   {
     title: "Top 30 Pikiran Terbaik Negeri x elevAIte 2025",
     date: "July 2025",
-    location: "Pikiran Terbaik Negeri",
     highlight: "Top 30",
     competitionImage: "/images/ptn-x-elevaite.png",
     organizers: [
@@ -66,9 +63,9 @@ export default function Achievements() {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="group overflow-hidden rounded-2xl border border-angel-blue/20 bg-white shadow-sm hover:shadow-xl hover:shadow-angel-blue/10 transition-all duration-300"
+              className="rounded-2xl border border-angel-blue/20 bg-white shadow-sm hover:shadow-xl hover:shadow-angel-blue/10 transition-all duration-300"
             >
-              <div className="relative h-48 bg-gradient-to-br from-venice-blue/20 via-angel-blue/20 to-fundusnap-white">
+              <div className="relative h-48 overflow-hidden rounded-t-2xl bg-gradient-to-br from-venice-blue/20 via-angel-blue/20 to-fundusnap-white">
                 <Image
                   src={achievement.competitionImage}
                   alt={achievement.title}
@@ -85,7 +82,6 @@ export default function Achievements() {
                   <span className="px-2.5 py-1 rounded-full bg-angel-blue/20 text-venice-blue font-medium">
                     {achievement.date}
                   </span>
-                  <span>{achievement.location}</span>
                 </div>
                 <h3 className="font-display text-lg font-semibold text-bleached-cedar mb-4">
                   {achievement.title}
@@ -99,7 +95,9 @@ export default function Achievements() {
                     {achievement.organizers.map((organizer, orgIndex) => (
                       <div
                         key={orgIndex}
-                        className="relative h-10 w-24 rounded-lg bg-fundusnap-white border border-angel-blue/20 flex items-center justify-center px-2"
+                        className="group/organizer relative h-10 w-24 rounded-lg bg-fundusnap-white border border-angel-blue/20 flex items-center justify-center px-2"
+                        title={organizer.name}
+                        aria-label={organizer.name}
                       >
                         <Image
                           src={organizer.logo}
@@ -107,6 +105,9 @@ export default function Achievements() {
                           fill
                           className="object-contain p-2"
                         />
+                        <span className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-bleached-cedar px-2 py-1 text-[10px] font-medium text-white opacity-0 shadow-md transition-all duration-200 group-hover/organizer:-translate-y-1 group-hover/organizer:opacity-100 max-w-[12rem] text-center whitespace-normal z-10">
+                          {organizer.name}
+                        </span>
                       </div>
                     ))}
                   </div>
