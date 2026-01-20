@@ -36,6 +36,7 @@ export default function Download() {
 
             {/* Download buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              {/*
               <a
                 href="#"
                 className="inline-flex items-center justify-center gap-3 px-6 py-4 bg-white text-bleached-cedar rounded-xl font-semibold hover:bg-fundusnap-white transition-all hover:shadow-xl group"
@@ -57,6 +58,7 @@ export default function Download() {
                   <p className="text-lg font-bold">Google Play</p>
                 </div>
               </a>
+              */}
 
               <a
                 href="https://github.com/fundusnap/fundusnap-app/releases/download/v1.0.0/Fundusnap-release-1.0.apk"

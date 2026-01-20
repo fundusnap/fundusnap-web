@@ -4,6 +4,7 @@ import {
   Features,
   HowItWorks,
   About,
+  Achievements,
   Download,
   Footer,
 } from "@/components";
@@ -17,6 +18,7 @@ export default function Home() {
         <Features />
         <HowItWorks />
         <About />
+        <Achievements />
         <Download />
       </main>
       <Footer />
