@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Fundusnap - AI-Powered Diabetic Retinopathy Detection",
@@ -34,6 +35,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://stat.faizath.com/script.js"
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID}
+          data-domains={process.env.NEXT_PUBLIC_UMAMI_DOMAINS}
+          strategy="lazyOnload"
+          defer
+        />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
