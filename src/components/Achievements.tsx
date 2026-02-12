@@ -1,26 +1,35 @@
 import Image from "next/image";
 
+import elevaiteImg from "@/assets/images/elevaite.png";
+import microsoftImg from "@/assets/images/microsoft.png";
+import bijiBijiImg from "@/assets/images/biji-biji.png";
+import telkomUniversityImg from "@/assets/images/telkom-university.png";
+import diginationImg from "@/assets/images/digination.png";
+import ppiImg from "@/assets/images/perhimpunan-pelajar-indonesia-dunia.png";
+import ptnElevaiteImg from "@/assets/images/ptn-x-elevaite.png";
+import yayasanBumnImg from "@/assets/images/yayasan-bumn.webp";
+
 const achievements = [
   {
     title: "3rd Winner elevAIte Microsoft x Biji-biji Hackathon 2025 at Tel-U Hub",
     date: "June 2025",
     highlight: "3rd Winner",
-    competitionImage: "/images/elevaite.png",
+    competitionImage: elevaiteImg,
     organizers: [
-      { name: "Microsoft", logo: "/images/microsoft.png" },
-      { name: "Biji-biji Initiative", logo: "/images/biji-biji.png" },
-      { name: "Telkom University", logo: "/images/telkom-university.png" },
+      { name: "Microsoft", logo: microsoftImg },
+      { name: "Biji-biji Initiative", logo: bijiBijiImg },
+      { name: "Telkom University", logo: telkomUniversityImg },
     ],
   },
   {
     title: "Top 6 Finalist Digination Fest PPI Hackathon 2025",
     date: "June 2025",
     highlight: "Top 6 Finalist",
-    competitionImage: "/images/digination.png",
+    competitionImage: diginationImg,
     organizers: [
       {
         name: "Perhimpunan Pelajar Indonesia Dunia",
-        logo: "/images/perhimpunan-pelajar-indonesia-dunia.png",
+        logo: ppiImg,
       },
     ],
   },
@@ -28,11 +37,11 @@ const achievements = [
     title: "Top 30 Pikiran Terbaik Negeri x elevAIte 2025",
     date: "July 2025",
     highlight: "Top 30",
-    competitionImage: "/images/ptn-x-elevaite.png",
+    competitionImage: ptnElevaiteImg,
     organizers: [
-      { name: "Yayasan BUMN", logo: "/images/yayasan-bumn.webp" },
-      { name: "Microsoft", logo: "/images/microsoft.png" },
-      { name: "Biji-biji Initiative", logo: "/images/biji-biji.png" },
+      { name: "Yayasan BUMN", logo: yayasanBumnImg },
+      { name: "Microsoft", logo: microsoftImg },
+      { name: "Biji-biji Initiative", logo: bijiBijiImg },
     ],
   },
 ];

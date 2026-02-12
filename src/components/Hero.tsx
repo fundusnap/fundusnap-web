@@ -2,6 +2,10 @@ import { Eye, Shield, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import eyeRowImg from "@/assets/images/eye_row.png";
+import eyeRowAltImg from "@/assets/images/eye_row_alt.png";
+import eyeImg from "@/assets/images/eye.png";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -108,7 +112,7 @@ export default function Hero() {
                       <div className="bg-white rounded-xl p-3 shadow-sm border border-angel-blue/20">
                         <div className="w-full h-20 rounded-lg mb-2 overflow-hidden relative">
                           <Image
-                            src="/images/eye_row.png"
+                            src={eyeRowImg}
                             alt="Eye scan"
                             fill
                             className="object-cover"
@@ -123,7 +127,7 @@ export default function Hero() {
                       <div className="bg-white rounded-xl p-3 shadow-sm border border-angel-blue/20">
                         <div className="w-full h-20 rounded-lg mb-2 overflow-hidden relative">
                           <Image
-                            src="/images/eye_row_alt.png"
+                            src={eyeRowAltImg}
                             alt="Eye scan"
                             fill
                             className="object-cover"
@@ -157,7 +161,7 @@ export default function Hero() {
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full overflow-hidden relative">
                     <Image
-                      src="/images/eye.png"
+                      src={eyeImg}
                       alt="Fundus scan"
                       fill
                       className="object-cover"

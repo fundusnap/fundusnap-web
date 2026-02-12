@@ -2,6 +2,9 @@ import { Apple, Download as DownloadIcon, Play } from "lucide-react";
 import Image from "next/image";
 import Logo from "./Logo";
 
+import eyeImg from "@/assets/images/eye.png";
+import eyeRowAltImg from "@/assets/images/eye_row_alt.png";
+
 export default function Download() {
   return (
     <section id="download" className="py-20 md:py-32 bg-gradient-to-br from-venice-blue via-venice-blue to-bleached-cedar relative overflow-hidden">
@@ -97,7 +100,7 @@ export default function Download() {
                   <div className="flex-1 flex flex-col items-center justify-center p-6">
                     <div className="w-32 h-32 rounded-2xl overflow-hidden relative mb-6 shadow-lg">
                       <Image
-                        src="/images/eye.png"
+                        src={eyeImg}
                         alt="Fundus scan"
                         fill
                         className="object-cover"
@@ -130,7 +133,7 @@ export default function Download() {
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full overflow-hidden relative">
                     <Image
-                      src="/images/eye_row_alt.png"
+                      src={eyeRowAltImg}
                       alt="Eye scan"
                       fill
                       className="object-cover"
