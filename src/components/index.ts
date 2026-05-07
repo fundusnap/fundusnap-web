@@ -7,3 +7,4 @@ export { default as Achievements } from "./Achievements";
 export { default as Download } from "./Download";
 export { default as Footer } from "./Footer";
 export { default as Logo } from "./Logo";
+export { default as DomainNotice } from "./DomainNotice";

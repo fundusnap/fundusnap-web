@@ -7,11 +7,13 @@ import {
   Achievements,
   Download,
   Footer,
+  DomainNotice,
 } from "@/components";
 
 export default function Home() {
   return (
     <>
+      <DomainNotice />
       <Header />
       <main>
         <Hero />
