@@ -45,7 +45,7 @@ export default function Footer() {
               <div className="flex items-center gap-3 text-angel-blue/70">
                 <Mail size={16} />
                 <a
-                  href="mailto:contact@fundusnap.com"
+                  href="mailto:contact@fundusnap.faizath.com"
                   className="hover:text-white transition-colors"
                 >
                   contact@fundusnap.com

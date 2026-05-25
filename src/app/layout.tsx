@@ -36,6 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=${JSON.stringify(process.env.NEXT_PUBLIC_WEB_URL || "")};if(!t)return;var u=new URL(t);var h=window.location.hostname;if(h==="localhost"||h==="127.0.0.1")return;if(window.location.origin!==u.origin){window.location.replace(u.origin+window.location.pathname+window.location.search+window.location.hash);}}catch(e){}})();`,
+          }}
+        />
         <Script
           src="https://stat.faizath.com/script.js"
           data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID}
