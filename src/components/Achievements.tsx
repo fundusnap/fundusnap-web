@@ -22,9 +22,9 @@ const achievements = [
     ],
   },
   {
-    title: "Top 6 Finalist Digination Fest PPI Hackathon 2025",
+    title: "Top 5 Finalist Digination Fest PPI Hackathon 2025",
     date: "June 2025",
-    highlight: "Top 6 Finalist",
+    highlight: "Top 5 Finalist",
     competitionImage: diginationImg,
     organizers: [
       {
